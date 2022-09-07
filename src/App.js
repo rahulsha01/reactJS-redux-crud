@@ -1,5 +1,8 @@
 import "./App.css";
 import { useState } from "react";
+import { UseEffectComponent } from './components/UserEffectComponent';
+import {UseStateComponent } from './components/UseStateComponent';
+import { ContextDataPassing } from './components/ContextDataPassing';
 import { useSelector, useDispatch } from "react-redux";
 import { addUser, deleteUser, updateUsername } from "./features/Users";
 
@@ -12,7 +15,16 @@ function App() {
   const [newUsername, setNewUsername] = useState("");
 
   return (
+    
     <div className="App">
+        {/*
+      // UserState Hook Example
+       <UseStateComponent></UseStateComponent> */}
+      {/* 
+      // UseEffect Hooks Example 
+      <UseEffectComponent></UseEffectComponent> */}
+      {/* UseContext Example*/}
+      {/* <ContextDataPassing></ContextDataPassing> */}
       {" "}
       <div className="addUser">
         <input
